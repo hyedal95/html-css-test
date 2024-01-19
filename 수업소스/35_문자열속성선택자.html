@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열속성선택자</title>
+    <!-- 문자열 속성 선택자 : 자주 쓰지는 않지만 가끔 필요하다
+    사용방법
+    선택자 [속성~=값]: 속성안의 값이 특정 값을 단어로 포함하는 태그 선택
+    선택자 [속성^=값]: 속성안의 값이 특정 값을 단어로 끝나는 태그 선택
+    선택자 [속성$=값]: 속성안의 값이 특정 값을 단어로 끝나는 태그 선택
+    선택자 [속성*=값]: 속성안의 값이 특정 값을 단어로 포함하는 태그 선택
+    예)선택자 [속성*=값]{속성:값}
+    -->
+    <style>
+        img[src$=png]{border: 3px solod red;}
+        img[src$=png]{border: 3px blue ;}
+    </style>
+</head>
+<body>
+    <img src="./images/고양이.png" alt="">
+    <img src="./images/나무.png" alt="">
+</body>
+</html>

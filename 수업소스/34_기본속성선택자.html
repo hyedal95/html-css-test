@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        속성선택자 : 특정 속성에 효과를 줄 때 사용방법
+        1. 사용방법
+        선택자 뒤에 대괄호를 사용해서 속성값을 처리
+        예) 선택자[속성]
+     -->
+     <style>
+        /* input태그 중에서 type 속성값로가지는 태그로 변경 */
+        input[type=text] {background-color: burlywood;}
+        input[type=password]{background-color: blue;}
+     </style>
+</head>
+<body>
+    <input type="text">
+    <input type="password">
+</body>
+</html>
